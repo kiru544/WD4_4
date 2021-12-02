@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js" defer></script>
+    <title>WD4</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <div id="big">
+      <nav class="nav bar navbar-expand-lg bg-info navbar-light">
+        <div class="container">
+          <ul class="nav bg-info nav-pills" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link active"
+                id="pills-home-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-home"
+                type="button"
+                role="tab"
+                aria-controls="pills-home"
+                aria-selected="true"
+              >
+                Home
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="pills-products-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-products"
+                type="button"
+                role="tab"
+                aria-controls="pills-products"
+                aria-selected="false"
+              >
+                Products
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="pills-services-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-services"
+                type="button"
+                role="tab"
+                aria-controls="pills-services"
+                aria-selected="false"
+              >
+                Services
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="pills-about-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-about"
+                type="button"
+                role="tab"
+                aria-controls="pills-about"
+                aria-selected="false"
+              >
+                About
+              </button>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div id="mini">
+      <nav class="nav bar navbar-expand-lg bg-info navbar-light">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#burger"
+          aria-controls="burger"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="burger">
+          <div class="navbar-nav ms-auto">
+            <ul class="nav flex-column nav-pills" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link active"
+                  data-bs-toggle="pill"
+                  data-bs-target="#pills-home"
+                  type="button"
+                  role="tab"
+                  aria-controls="pills-home"
+                  aria-selected="true"
+                >
+                  Home
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  data-bs-toggle="pill"
+                  data-bs-target="#pills-products"
+                  type="button"
+                  role="tab"
+                  aria-controls="pills-products"
+                  aria-selected="false"
+                >
+                  Products
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  data-bs-toggle="pill"
+                  data-bs-target="#pills-services"
+                  type="button"
+                  role="tab"
+                  aria-controls="pills-services"
+                  aria-selected="false"
+                >
+                  Services
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  data-bs-toggle="pill"
+                  data-bs-target="#pills-about"
+                  type="button"
+                  role="tab"
+                  aria-controls="pills-about"
+                  aria-selected="false"
+                >
+                  About
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <svg width="100%" height="10">
+      <line x1="0" y1="1" x2="100%" y2="1" stroke="grey" stroke-width="5" />
+    </svg>
+    <div class="position-absolute top-50 start-0 translate-middle-y">
+      <svg width="250" height="250">
+        <circle
+          r="120"
+          cx="125"
+          cy="125"
+          fill="none"
+          stroke="black"
+          stroke-width="5px"
+        />
+        <circle
+          r="25"
+          cx="125"
+          cy="170"
+          fill="none"
+          stroke="black"
+          stroke-width="5px"
+        />
+        <line
+          x1="70"
+          y1="50"
+          x2="70"
+          y2="100"
+          stroke="black"
+          stroke-width="10"
+        />
+        <line
+          x1="160"
+          y1="50"
+          x2="160"
+          y2="100"
+          stroke="black"
+          stroke-width="10"
+        />
+      </svg>
+    </div>
+
+    <div class="tab-content" id="pills-tabContent">
+      <div
+        class="tab-pane fade show active"
+        id="pills-home"
+        role="tabpanel"
+        aria-labelledby="pills-home-tab"
+      >
+        <h1>Welcome to our website</h1>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam
+          voluptas harum illo doloribus voluptatibus at, sapiente quas veritatis
+          suscipit omnis iusto. Nihil libero illum quas? Quam dolore asperiores
+          possimus fugit.
+        </p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam
+          voluptas harum illo doloribus voluptatibus at, sapiente quas veritatis
+          suscipit omnis iusto. Nihil libero illum quas? Quam dolore asperiores
+          possimus fugit.
+        </p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam
+          voluptas harum illo doloribus voluptatibus at, sapiente quas veritatis
+          suscipit omnis iusto. Nihil libero illum quas? Quam dolore asperiores
+          possimus fugit.
+        </p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam
+          voluptas harum illo doloribus voluptatibus at, sapiente quas veritatis
+          suscipit omnis iusto. Nihil libero illum quas? Quam dolore asperiores
+          possimus fugit.
+        </p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam
+          voluptas harum illo doloribus voluptatibus at, sapiente quas veritatis
+          suscipit omnis iusto. Nihil libero illum quas? Quam dolore asperiores
+          possimus fugit.
+        </p>
+      </div>
+      <div
+        class="tab-pane fade"
+        id="pills-products"
+        role="tabpanel"
+        aria-labelledby="pills-products-tab"
+      >
+        <h1>Products</h1>
+        <h4 class="container">Products list</h4>
+        <div class="card-group">
+          <div class="card">
+            <img class="card-img-top" src="images/Red.png" alt="Red" />
+            <div class="card-body">
+              <h4 class="card-title text-secondary">Red</h4>
+              <p class="card-text lh-sm">Red is looking kinda sus</p>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="card-link btn btn-secondary mt-auto"
+                >more info</a
+              >
+            </div>
+          </div>
+
+          <div class="card">
+            <img class="card-img-top" src="images/Yellow.png" alt="Yellow" />
+            <div class="card-body">
+              <h4 class="card-title text-secondary">Yellow</h4>
+              <p class="card-text lh-sm">Red is looking kinda sus</p>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="card-link btn btn-secondary mt-auto"
+                >more info</a
+              >
+            </div>
+          </div>
+
+          <div class="card">
+            <img class="card-img-top" src="images/Black.png" alt="Black" />
+            <div class="card-body">
+              <h4 class="card-title text-secondary">Black</h4>
+              <p class="card-text lh-sm">Black is looking kinda sus</p>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="card-link btn btn-secondary mt-auto"
+                >more info</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="tab-pane fade"
+        id="pills-services"
+        role="tabpanel"
+        aria-labelledby="pills-services-tab"
+      >
+        <h1>Services</h1>
+        <p>We offer everything for you</p>
+      </div>
+      <div
+        class="tab-pane fade"
+        id="pills-about"
+        role="tabpanel"
+        aria-labelledby="pills-about-tab"
+      >
+        <h1>About Us</h1>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam
+          voluptas harum illo doloribus voluptatibus at, sapiente quas veritatis
+          suscipit omnis iusto. Nihil libero illum quas? Quam dolore asperiores
+          possimus fugit.
+        </p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam
+          voluptas harum illo doloribus voluptatibus at, sapiente quas veritatis
+          suscipit omnis iusto. Nihil libero illum quas? Quam dolore asperiores
+          possimus fugit.
+        </p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam
+          voluptas harum illo doloribus voluptatibus at, sapiente quas veritatis
+          suscipit omnis iusto. Nihil libero illum quas? Quam dolore asperiores
+          possimus fugit.
+        </p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam
+          voluptas harum illo doloribus voluptatibus at, sapiente quas veritatis
+          suscipit omnis iusto. Nihil libero illum quas? Quam dolore asperiores
+          possimus fugit.
+        </p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam
+          voluptas harum illo doloribus voluptatibus at, sapiente quas veritatis
+          suscipit omnis iusto. Nihil libero illum quas? Quam dolore asperiores
+          possimus fugit.
+        </p>
+        <div class="text-center">
+          <img class="rounded" src="images/Red.png" alt="CEO" />
+          <h4>CEO</h4>
+        </div>
+      </div>
+    </div>
+    <svg width="100%" height="10">
+      <line x1="0" y1="1" x2="100%" y2="1" stroke="grey" stroke-width="5" />
+    </svg>
+
+    <footer class="bg-info text-center">
+      <div class="text-center p-3">
+        &copy;Copyright:
+        <a href="#"> Website </a>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
